@@ -1,6 +1,6 @@
 #!perl
 # vim: softtabstop=4 tabstop=4 shiftwidth=4 ft=perl expandtab smarttab
-# ABSTRACT: Perl API for CoinSpot API
+# ABSTRACT: Trade BitCoin, Ethereum, Monero and other CrytoCurrency via CoinSpot
 
 # See also https://www.coinspot.com.au/api
 
@@ -79,7 +79,9 @@ sub _post {
 
 =head1 DESCRIPTION
 
-A perl API for convenience in using CoinSpot's vaguely RESTful API
+Trade BitCoin, Ethereum, Monero and other CryptoCurrency via the L<CoinSpot|https://www.coinspot.com.au?affiliate=6XUL8> vaguely RESTful API.
+
+You will of course need to create an account on L<CoinSpot|https://www.coinspot.com.au?affiliate=6XUL8>, which is an Australian place to Trade CryptoCurrency.
 
 =head1 ALPHA STATUS WARNING
 
@@ -319,7 +321,7 @@ sub myorders {
 
 =head2 Buying
 
-Exchange AUD for Crypto Currency. B<These functions will spend your money>.
+Exchange AUD for CryptoCurrency. B<These functions will spend your money>.
 
 =head3 quotebuy
 
@@ -390,7 +392,7 @@ Place Buy Order
 
 B<DANGER DANGER DANGER>
 
-This function will try to spend your hard earned money on Crypto Currency.
+This function will try to spend your hard earned money on CryptoCurrency.
 
 B<DANGER DANGER DANGER>
 
@@ -406,7 +408,7 @@ i.e. BTC, LTC, DOGE, ETH, ETC.
 
 =item amount
 
-The amount of coins to buy
+The amount of coins to buy, max precision 8 decimal places
 
 =item rate
 
@@ -505,7 +507,7 @@ The address to send coins to
 
 =item amount
 
-The amount of coins to buy
+The amount of coins to send
 
 =back
 
@@ -572,7 +574,7 @@ sub depositcoin {
 
 =head2 Selling
 
-Exchange Crypto Currency for AUD. B<These functions will sell your assets>
+Exchange CryptoCurrency for AUD. B<These functions will sell your assets>
 
 =head3 quotesell
 
@@ -595,7 +597,7 @@ i.e. BTC, LTC, DOGE, ETH, ETC.
 
 =item amount
 
-The amount of coins to buy
+The amount of coins to sell
 
 =back
 
@@ -643,7 +645,7 @@ Place Sell Order
 
 B<DANGER DANGER DANGER>
 
-This function will try to sell your Crypto Currency in exchange for Australian Dollars
+This function will try to sell your CryptoCurrency in exchange for Australian Dollars
 
 B<DANGER DANGER DANGER>
 
