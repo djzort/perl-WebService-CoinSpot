@@ -1,6 +1,6 @@
 #!perl
 # vim: softtabstop=4 tabstop=4 shiftwidth=4 ft=perl expandtab smarttab
-# ABSTRACT: Trade BitCoin, Ethereum, Monero and other CrytoCurrency via CoinSpot
+# ABSTRACT: Trade BitCoin, Ethereum, Monero and other CryptoCurrency via CoinSpot
 
 # See also https://www.coinspot.com.au/api
 
