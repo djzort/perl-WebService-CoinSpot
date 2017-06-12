@@ -281,7 +281,6 @@ One property for each coin with your balance for that coin
 
 sub balances {
     my $self = shift;
-    my %args = @_;
     return $self->_post( [qw/ my balances /] )
 }
 
@@ -315,7 +314,6 @@ Array containing all your sell orders
 
 sub myorders {
     my $self = shift;
-    my %args = @_;
     return $self->_post( [qw/ my orders /] )
 }
 
